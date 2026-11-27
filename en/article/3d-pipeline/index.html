@@ -51,7 +51,7 @@
 <main id="main" class="static-main" tabindex="-1">
 <div class="wrap">
     <div class="breadcrumbs"><a href="../../../en/">Home</a><span>/</span><a href="https://animation.tvcn.org/">Animation</a><span>/</span><span>The 3D Pipeline: Blockout to Render</span></div>
-    <header class="article-hero"><p class="eyebrow">Animation / 3D</p><h1>The 3D Pipeline: Blockout to Render</h1><p class="article-deck">3D does not start with animation after modeling. Blockout sets timing, then layout, animation, lighting, and render, each step reversible.</p><div class="article-meta"><span>2 min quick read + 8 min deep read · Intermediate</span><span>TVCN Animation Desk</span><span>Edited 2026-11</span><span class="deep-badge">DEEP / 7 MIN</span></div></header><nav class="article-toc" aria-label="On this page"><span class="toc-label">On this page</span><ol><li><a href="#section-1">Blockout sets timing</a></li><li><a href="#section-2">Layout locks the camera before animation</a></li><li><a href="#section-3">Lighting and render are separate checks</a></li><li><a href="#section-4">Three checks</a></li><li><a href="#section-5">Deep dive</a></li><li><a href="#section-6">Boundary</a></li><li><a href="#section-7">Five stages, each with a handoff</a></li><li><a href="#section-8">Go deeper: for people already shooting</a></li><li><a href="#section-9">Blockout before modeling</a></li><li><a href="#section-10">Rig and animation handoff</a></li><li><a href="#section-11">Lighting, render, and rollback</a></li><li><a href="#section-12">Five-minute drill: one shot through the pipeline</a></li><li><a href="#section-13">When a 3D shot is done</a></li><li><a href="#section-14">Ten 3D pipeline checks</a></li><li><a href="#section-15">Boundary</a></li><li><a href="#section-16">References and further reading</a></li></ol></nav>
+    <header class="article-hero"><p class="eyebrow">Animation / 3D</p><h1>The 3D Pipeline: Blockout to Render</h1><p class="article-deck">3D does not start with animation after modeling. Blockout sets timing, then layout, animation, lighting, and render, each step reversible.</p><div class="article-meta"><span>2 min quick read + 6 min deep read · Intermediate</span><span>TVCN Animation Desk</span><span>Edited 2026-11</span><span class="deep-badge">DEEP / 7 MIN</span></div></header><nav class="article-toc" aria-label="On this page"><span class="toc-label">On this page</span><ol><li><a href="#section-1">Blockout sets timing</a></li><li><a href="#section-2">Layout locks the camera before animation</a></li><li><a href="#section-3">Lighting and render are separate checks</a></li><li><a href="#section-4">Three checks</a></li><li><a href="#section-5">Deep dive</a></li><li><a href="#section-6">Boundary</a></li><li><a href="#section-7">Five stages, each with a handoff</a></li><li><a href="#section-8">Go deeper: for people already shooting</a></li><li><a href="#section-9">References and further reading</a></li></ol></nav>
     
     
     <article class="article-body"><h2 id="section-1">Blockout sets timing</h2>
@@ -112,11 +112,10 @@
         <p>The 3D pipeline is not a software menu. It is a chain where every step can go back one step; skip blockout and you rebuild structure forever.</p>
         <span class="deep-dive-note">One step past the field note</span>
       </header>
-      <article class="article-body"><section><h2 id="section-9">Blockout before modeling</h2><p>Block with boxes and cylinders for proportion, camera, and blocking. Confirm what the shot can see before modeling detail. If the blockout fails, more detail is more waste.</p><p>Put the camera in the scene first and check composition at the real focal length. Do not model first and look for a camera later; by then it cannot change.</p></section><section><h2 id="section-10">Rig and animation handoff</h2><p>Set joint count and naming before rigging. Animators need a rig that bends, turns, and carries weight, not a pile of controls. Record a test action at handoff.</p><p>Animate on the low model first to confirm timing and center of gravity, then move to high. Animating heavy geometry slows both the viewport and your judgment.</p></section><section><h2 id="section-11">Lighting, render, and rollback</h2><p>Light the gray model first to confirm the key direction. Do not load full materials at the start; read the value structure first. Render low resolution and low samples to confirm motion and composition.</p><p>Save a version at every stage with date and content in the name. Rolling back is part of the pipeline, not a failure. Without versions, rollback means redo.</p></section><section><h2 id="section-12">Five-minute drill: one shot through the pipeline</h2><p>Take a simple scene through blockout, low model, rig test, low-model animation, gray lighting, low-res render. Ten minutes per step; no detail chasing.</p><p>Save a version each step, then roll back to the blockout and check the camera. If it moved, you changed structure later without admitting it.</p></section><section><h2 id="section-13">When a 3D shot is done</h2><p>From blockout to final render: the camera did not secretly move, proportions held, the rig did not break, light direction matches, and the low-res test and final share composition. All five pass.</p><p>If the final composition differs from the blockout, roll back and check. Do not hide it with a post crop. The expensive 3D problems are decisions changed late.</p></section><section><h2 id="section-14">Ten 3D pipeline checks</h2><ul><li>Blockout before modeling</li><li>Boxes and cylinders in blockout</li><li>Camera placed first</li><li>Composition at real focal length</li><li>Joints and naming before rig</li><li>Test action recorded at handoff</li><li>Animation on low model</li><li>Gray-model lighting first</li><li>Low-res, low-sample test render</li><li>Version saved at every stage</li></ul><p>The way to save time in 3D is not skipping a step. It is making every step able to go back one.</p></section></article>
+      
     </section>
     
-    <section><h2 id="section-15">Boundary</h2><p>This page only covers “The 3D Pipeline: Blockout to Render”; it does not replace Animatic Pipeline: Voice, Timing, Board, Animation Case: From Board to Final, Documentary Template: One Person, One Thing, One Change. When the problem belongs to one of those pages, use that page instead of adding more parameters here.</p></section>
-<aside class="article-credit">
+    <aside class="article-credit">
     <div class="article-credit-head"><p class="eyebrow">Author and test note</p><span class="mono">2026-11-22</span></div>
     <div class="article-credit-grid">
       <div><b>Byline</b><p><a href="https://tvcn.org/en/about/#desk-animation">TVCN Animation Desk</a></p></div>
@@ -129,10 +128,22 @@
     
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 <aside class="article-sources" data-source-kind="sourced">
 <div class="article-credit-head"><p class="eyebrow">Sources / 来源</p><span class="mono">Public references and field review</span></div>
 <p class="source-types">This page separates field judgement from public references; where there is no external source, it states the field limits.</p>
-<h2 id="section-16">References and further reading</h2>
+<h2 id="section-9">References and further reading</h2>
 <ul>
 <li>[S62] <a href="https://docs.blender.org/manual/en/latest/">Blender: Official Manual</a> — Accessed 2026-11-26. Used to check the terminology/method/rule in the “Lighting and render are separate checks” section against Blender manual, not an industry pipeline standard; it does not verify numbers, model choices or on-set conclusions derived from this page, and is not a substitute for a test.</li>
 <li>[S59] <a href="https://helpx.adobe.com/after-effects/user-guide.html">Adobe: After Effects Guide</a> — Accessed 2026-11-26. Used to check the terminology/method/rule in the “Blockout sets timing” section against official After Effects guide, not a verdict on compositing aesthetics; it does not verify numbers, model choices or on-set conclusions derived from this page, and is not a substitute for a test.</li>
